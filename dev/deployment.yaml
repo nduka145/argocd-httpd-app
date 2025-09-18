@@ -1,0 +1,57 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: httpd-index
+data:
+  index.html: |
+    <html>
+    <head><title>Welcome</title></head>
+    <body>
+      <h1 style="text-align:center; color:blue;">Welcome to Kubernetes 🚀</h1>
+    </body>
+    </html>
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: httpd-deployment
+  labels:
+    app: httpd
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: httpd
+  template:
+    metadata:
+      labels:
+        app: httpd
+    spec:
+      containers:
+      - name: httpd
+        image: httpd:2.4
+        ports:
+        - containerPort: 80
+        volumeMounts:
+        - name: html
+          mountPath: /usr/local/apache2/htdocs/
+      volumes:
+      - name: html
+        configMap:
+          name: httpd-index
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: httpd-service
+  labels:
+    app: httpd
+spec:
+  type: NodePort   # Change to LoadBalancer if your cluster supports it
+  selector:
+    app: httpd
+  ports:
+  - port: 80
+    targetPort: 80
+    nodePort: 30080   # Optional, Kubernetes will auto-assign if omitted
+
