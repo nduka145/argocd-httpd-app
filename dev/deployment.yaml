@@ -7,14 +7,35 @@ data:
     <html>
     <head><title>Welcome</title></head>
     <body>
-      <h1 style="text-align:center; color:blue;">Welcome to Kubernetes!!
-On a high level. I am Tittled Devops engineer with over 6years in General IT experiences. I have supported different Govt projects that uses Agil develoment life circle in their project management. Supporting different application developers with their code deployment through manual proccess and Automated CICD pipelines using tools like; Ansible, jenkins, Github, and other integrated tools like Sonarqube and Nexus.
-
-Through my expertise in linux and AWS cloud, I have used Terraform to provision and build out infratructure in AWS cloud using terraform modules and templates. I have managed and build out aws service; VPC and its component, S3, EC2, Security group, cloud front and more. With experience in linux administration and engineer, I hava helped in installing, configuring and troubleshoot applications in linux based virtual machines.
-
-I am also experienced in monitoring and logging using tools like Prometheus, Grafana, and Graylog to ensure system reliability and performance. My ability to automate infrastructure management, streamline deployments, and support application teams has made me an essential part of DevOps-driven projects. With a strong foundation in Linux, cloud computing, and CI/CD pipelines, I continuously seek to optimize processes and enhance operational efficiency.
-
-I have been notified of the contract end date, thats why I am seeking for New Opportunities.</h1>
+      <h1 style="text-align:center; color:blue;">
+        Welcome to Kubernetes!!
+      </h1>
+      <p>
+        On a high level, I am a DevOps Engineer with over 6 years of general IT experience.
+        I have supported different government projects that use Agile development life cycles
+        in their project management. I support application developers with deployments through
+        both manual processes and automated CI/CD pipelines using tools like Ansible, Jenkins,
+        GitHub, SonarQube, and Nexus.
+      </p>
+      <p>
+        Through my expertise in Linux and AWS Cloud, I have used Terraform to provision
+        infrastructure in AWS with reusable modules and templates. I have managed services such
+        as VPCs, S3, EC2, Security Groups, CloudFront, and more. With Linux administration
+        skills, I have installed, configured, and troubleshooted applications on Linux VMs.
+      </p>
+      <p>
+        I also have experience in monitoring and logging using Prometheus, Grafana, and Graylog
+        to ensure system reliability and performance. My ability to automate infrastructure,
+        streamline deployments, and support developers has made me an essential part of
+        DevOps-driven projects.
+      </p>
+      <p>
+        With a strong foundation in Linux, cloud computing, and CI/CD pipelines, I continuously
+        seek to optimize processes and enhance operational efficiency.
+      </p>
+      <p>
+        I have been notified of the contract end date, which is why I am seeking new opportunities.
+      </p>
     </body>
     </html>
 ---
