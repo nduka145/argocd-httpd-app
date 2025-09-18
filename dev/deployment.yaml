@@ -7,7 +7,7 @@ data:
     <html>
     <head><title>Welcome</title></head>
     <body>
-      <h1 style="text-align:center; color:blue;">Welcome to Kubernetes 🚀</h1>
+      <h1 style="text-align:center; color:blue;">Welcome to Kubernetes, we are happy to see you!!!</h1>
     </body>
     </html>
 ---
